@@ -10,11 +10,12 @@ export const ThirdPageBlock = ({
   uniqueMargin,
   line,
   imageSize,
+  className
 }) => {
   return (
     <>
       <ThirdPageBlockPart
-        style={{ marginTop: uniqueMargin ? `${uniqueMargin}px` : "20px" }}
+        style={{ marginTop: uniqueMargin ? `${uniqueMargin}px` : "50px" }}
       >
           <h2 className="rotate-270 border-b">{number}</h2>
         {/* <ThirdPageBlockPartSvg line={line} className="flex"> */}

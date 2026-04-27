@@ -2,7 +2,7 @@ import { Container, Flexible } from "../../GlobalStyle";
 import { ForthPageBlock } from "./fortg-page-block";
 import { ForthPagePart, ForthPagePartContext } from "./styled";
 import Church from "../../assets/image/church.jpg";
-import Restaurant from "../../assets/image/restaurant.jpg";
+import Restaurant from "../../assets/image/restoran.jpg";
 import HeartLine from "../../assets/image/heartline.png";
 import Photo3 from "../../assets/image/examp2.jpg";
 import Bant from "../../assets/image/bant.png";
@@ -15,12 +15,12 @@ export const ForthPage = () => {
         <ForthPagePartContext>
           <ForthPageBlock
             ImageSrc={Church}
-            bigText={"Սուրբ Մարիամ Աստվածածին եկեղեցի"}
-            mapSrc={"https://maps.app.goo.gl/VyLXsTENTBxsTU987"}
+            bigText={"Սուրբ Երրորդություն եկեղեցի"}
+            mapSrc={"https://maps.app.goo.gl/v8pxPrzxB87LT6mB9"}
           />
           <ForthPageBlock
             ImageSrc={Restaurant}
-            bigText={"Նոր Դվին Ռեստորանային Համալիր"}
+            bigText={"Հրաշք Այգի Ռեստորան"}
             mapSrc={"https://maps.app.goo.gl/35zzYY99W9wpDqpM7"}
           />
         </ForthPagePartContext>

@@ -11,7 +11,7 @@ import { ThirdPagePartCalendar } from "../third-page/styled";
 import { TextShadow } from "../TextShadow";
 
 export const SecondPage = () => {
-  const weddingDate = new Date(2026, 4, 26, 0, 0, 0);
+  const weddingDate = new Date(2026, 5, 3, 0, 0, 0);
 
   const calculateTimeLeft = () => {
     const now = new Date();
@@ -122,7 +122,7 @@ export const SecondPage = () => {
           ))}
           {[...Array(37)].map((_, i) =>
             i > -1 && i <= 29 ? (
-              <div className={i + 1 == 26 ? "special" : ""}>{i + 1}</div>
+              <div className={i + 1 == 3 ? "special" : ""}>{i + 1}</div>
             ) : (
               <div className=""></div>
             ),

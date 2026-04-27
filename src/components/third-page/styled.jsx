@@ -13,6 +13,7 @@ const ThirdPagePartContext = styled.div`
   text-align: center;
   text-align: left;
   margin-top: 20px;
+  align-items: start;
   display: flex;
   flex-direction: column;
   justify-content: start;

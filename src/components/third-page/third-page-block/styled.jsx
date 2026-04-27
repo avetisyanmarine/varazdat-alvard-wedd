@@ -8,7 +8,6 @@ export const ThirdPageBlockPart = styled(Flexible)`
 `;
 export const ThirdPageBlockPartSvg = styled.div`
   display: flex;
-  /* align-items: center; */
   h2 {
     margin: 0;
   }
