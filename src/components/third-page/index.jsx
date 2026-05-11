@@ -16,7 +16,7 @@ export const ThirdPage = () => {
         <ThirdPagePartContext>
           <ThirdPageBlock
             // imageSize={80}
-            number={"17:30"}
+            number={"117:30"}
             bigText="Նշանադրություն"
             smallText="Lazur Rest Ռեստորան"
           />
