@@ -10,7 +10,7 @@ const ForthPagePartContextLast = styled.div`
     margin-bottom: 50px;
     img {
         display: block;
-        margin: 50px auto;
+        /* margin: 50px auto; */
     }
 
 `

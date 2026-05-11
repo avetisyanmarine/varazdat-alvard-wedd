@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ForthPageBlockPart = styled.div`
     text-align: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     h2 {
         margin: 40px 0;
     }

@@ -11,7 +11,7 @@ import { ThirdPagePartCalendar } from "../third-page/styled";
 import { TextShadow } from "../TextShadow";
 
 export const SecondPage = () => {
-  const weddingDate = new Date(2026, 5, 3, 0, 0, 0);
+  const weddingDate = new Date(2026, 5, 6, 0, 0, 0);
 
   const calculateTimeLeft = () => {
     const now = new Date();
@@ -84,7 +84,7 @@ export const SecondPage = () => {
           <TextShadow title="Սիրելի հյուրեր" />
           <Flexible className="font-[500]">
             <p className="text-[18px]">
-              Սիրով հրավիրում ենք Ձեզ ներկա գտնվելու մեր հարսանյաց հանդիսությանը
+              Սիրով հրավիրում ենք Ձեզ ներկա գտնվելու մեր նշանադրությանը
               և կիսելու մեր ուրախությունը։
             </p>
           </Flexible>
@@ -122,7 +122,7 @@ export const SecondPage = () => {
           ))}
           {[...Array(37)].map((_, i) =>
             i > -1 && i <= 29 ? (
-              <div className={i + 1 == 3 ? "special" : ""}>{i + 1}</div>
+              <div className={i + 1 == 6 ? "special" : ""}>{i + 1}</div>
             ) : (
               <div className=""></div>
             ),

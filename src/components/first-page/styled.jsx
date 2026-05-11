@@ -27,7 +27,8 @@ const FirstPagePartContext = styled.div`
     justify-content: center;
     align-items: center;
     h4 {
-      font-size: 22px;
+      font-size: 18px;
+      margin-top: 20px;
     }
     h3 {
       font-size: 30px;
