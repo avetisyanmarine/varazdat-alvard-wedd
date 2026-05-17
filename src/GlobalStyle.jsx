@@ -1,12 +1,17 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+:root {
+  color-scheme: light; 
+}
 body {
   background-color: #fff;
   margin: 0;
   padding: 0;
   font-family: ArmenianDecorativeU-Italic;
   color: #1E1E1E;
+  forced-color-adjust: none; 
+  -webkit-forced-color-adjust: none;
 }
 * {
     box-sizing: border-box;
