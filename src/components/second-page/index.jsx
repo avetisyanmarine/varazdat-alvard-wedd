@@ -2,7 +2,6 @@ import { SecondPagePart, GridDiv } from "./styled";
 import { Container, Flexible } from "../../GlobalStyle";
 import { useEffect, useState } from "react";
 import Photo2 from "../../assets/image/serliqyser.png";
-import BlockImage from "../../assets/image/blockimage.jpg";
 import PhotoF1 from "../../assets/image/photof1.jpg";
 import PhotoGroup1 from "../../assets/image/groupphoto1.jpg";
 import PhotoGroup2 from "../../assets/image/groupphoto2.jpg";
@@ -11,7 +10,7 @@ import { ThirdPagePartCalendar } from "../third-page/styled";
 import { TextShadow } from "../TextShadow";
 
 export const SecondPage = () => {
-  const weddingDate = new Date(2026, 5, 6, 0, 0, 0);
+  const weddingDate = new Date(2026, 5, 16, 0, 0, 0);
 
   const calculateTimeLeft = () => {
     const now = new Date();
@@ -81,24 +80,40 @@ export const SecondPage = () => {
           </GridDiv>
         </div>
         <div className="mt-16 mb-7">
-          <TextShadow title="Սիրելի հյուրեր" />
+          <h2 data-aos="zoom-in" className="mb-10" style={{ fontSize: "28px" }}>
+            Սիրելի՛ հարազատներ և ընկերներ
+          </h2>
           <Flexible className="font-[500]">
-            <p className="text-[18px]">
-              Սիրով հրավիրում ենք Ձեզ ներկա գտնվելու մեր նշանադրությանը
-              և կիսելու մեր ուրախությունը։
+            <p className="text-[16px]">
+              Մեծ սիրով հրավիրում ենք Ձեզ ներկա
+              գտնվելու և մեզ հետ կիսելու մեր կյանքի ամենագեղեցիկ ու հիշարժան
+              պահերից մեկը՝ մեր նշանադրության օրը։ <br /> Ձեր ներկայությունը մեզ համար
+              մեծ ուրախություն և պատիվ կլինի, իսկ այդ օրը՝ ավելի ջերմ, լուսավոր
+              և անմոռանալի։
             </p>
           </Flexible>
         </div>
       </Container>
       <Container>
         <div className="flex h-[100vh] gap-[20px] justify-around">
-          <div>
-            <img src={Photo2} className="h-[100vh] w-full" />
-          </div>
-          <div className="flex flex-col gap-2">
-            <img src={PhotoGroup1} alt="" className="h-1/3 object-cover rounded-[10px]" />
-            <img src={PhotoGroup2} alt="" className="h-1/3 object-cover rounded-[10px]" />
-            <img src={PhotoGroup3} alt="" className="h-1/3 object-cover rounded-[10px]" />
+            <img src={Photo2} className="h-[100vh] w-[40%]" />
+          <div className="flex flex-col gap-2 w-[60%]">
+            <img
+              src={PhotoGroup1}
+              alt=""
+              className="h-1/3 object-cover rounded-[10px]"
+            />
+            <img
+              src={PhotoGroup2}
+              alt=""
+              style={{ objectPosition: "top" }}
+              className="h-1/3 object-cover rounded-[10px]"
+            />
+            <img
+              src={PhotoGroup3}
+              alt=""
+              className="h-1/3 object-cover rounded-[10px]"
+            />
           </div>
         </div>
       </Container>
@@ -122,13 +137,13 @@ export const SecondPage = () => {
           ))}
           {[...Array(37)].map((_, i) =>
             i > -1 && i <= 29 ? (
-              <div className={i + 1 == 6 ? "special" : ""}>{i + 1}</div>
+              <div className={i + 1 == 16 ? "special" : ""}>{i + 1}</div>
             ) : (
               <div className=""></div>
             ),
           )}
         </ThirdPagePartCalendar>
-        
+
         <img src={PhotoF1} alt="" className="rounded-[15px] mt-[50px]" />
       </Container>
     </SecondPagePart>

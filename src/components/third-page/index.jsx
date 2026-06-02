@@ -18,7 +18,7 @@ export const ThirdPage = () => {
             // imageSize={80}
             number={"117:30"}
             bigText="Նշանադրություն"
-            smallText="Lazur Rest Ռեստորան"
+            smallText="Paradise Hall Ռեստորան"
           />
         </ThirdPagePartContext>
         <ThirdPagePartMini>

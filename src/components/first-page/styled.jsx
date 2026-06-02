@@ -12,7 +12,7 @@ const FirstPagePart = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: none;
+    /* filter: opacity(0.8); */
   }
 `;
 const FirstPagePartContext = styled.div`
@@ -31,7 +31,7 @@ const FirstPagePartContext = styled.div`
       margin-top: 20px;
     }
     h3 {
-      font-size: 30px;
+      font-size: 28px;
     }
   }
   h2 {

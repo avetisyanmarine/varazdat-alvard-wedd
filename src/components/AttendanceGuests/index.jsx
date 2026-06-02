@@ -96,7 +96,7 @@ const AttendanceGuests = () => {
 
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbyk9XxxZcOEj15i2_Jcu1cJePM0hjo9wyZeYMnYHKnkMcIw9GYeBT2GMGXWLU21hQdq/exec",
+        "https://script.google.com/macros/s/AKfycbxRaJyKUp-JiXWGnwITaPl1g1oxtZp3Iaqrca_UZ-M7bc5c4NIig7poR7gsp94FPFuJ/exec",
         {
           method: "POST",
           mode: "no-cors",
@@ -144,7 +144,7 @@ const AttendanceGuests = () => {
       {/* Header */}
       <Header>
         <h3>Հրավերի պատասխան</h3>
-        <p>Խնդրում ենք հաստատել Ձեր մասնակցությունը մինչև 30․05․26 </p>
+        <p>Խնդրում ենք հաստատել Ձեր մասնակցությունը մինչև 10.06.2026</p>
       </Header>
 
       {message.text && (
@@ -183,8 +183,8 @@ const AttendanceGuests = () => {
           </Label>
           <OptionGrid>
             {[
-              { value: "Էրիկայի կողմից", label: "Էրիկայի" },
-              { value: "Մանվելի կողմից", label: "Մանվելի" },
+              { value: "Վարազդատի կողմից", label: "Վարազդատի" },
+              { value: "Ալվարդի կողմից", label: "Ալվարդի" },
             ].map((option) => (
               <OptionButton
                 key={option.value}
